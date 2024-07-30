@@ -1,0 +1,28 @@
+<div>
+  <h1>Busca de CEP</h1>
+  <input [(ngModel)]="cep" placeholder="Digite o CEP" />
+  <button (click)="onSearch()">Buscar</button>
+
+  <div *ngIf="address" class="address-info">
+    <h2>Endereço:</h2>
+    <p><strong>CEP:</strong> {{ address.cep }}</p>
+    <p><strong>Logradouro:</strong> {{ address.logradouro }}</p>
+    <p><strong>Bairro:</strong> {{ address.bairro }}</p>
+    <p><strong>Localidade:</strong> {{ address.localidade }}</p>
+    <p><strong>UF:</strong> {{ address.uf }}</p>
+    <p><strong>IBGE:</strong> {{ address.ibge }}</p>
+    <p><strong>DDD:</strong> {{ address.ddd }}</p>
+    <p><strong>SIAFI:</strong> {{ address.siafi }}</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <div *ngIf="searchHistory.length > 0" class="search-history">
+    <h2>Histórico de Buscas:</h2>
+    <ul>
+      <li *ngFor="let history of searchHistory">{{ history }}</li>
+    </ul>
+  </div>
+</div>

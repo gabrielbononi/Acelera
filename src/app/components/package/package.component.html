@@ -1,0 +1,10 @@
+<div class="package-info">
+  <h2>Pacotes</h2>
+  <ul>
+    <li *ngFor="let package of packages">
+      <p><strong>Descrição:</strong> {{ package.description }}</p>
+      <p><strong>Peso:</strong> {{ package.weight }}</p>
+      <p><strong>Status:</strong> {{ package.status }}</p>
+    </li>
+  </ul>
+</div>

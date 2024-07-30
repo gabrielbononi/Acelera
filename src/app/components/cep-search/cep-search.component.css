@@ -1,0 +1,78 @@
+
+div {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #007BFF;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.address-info {
+  margin-top: 20px;
+}
+
+.address-info p {
+  margin: 5px 0;
+}
+
+
+.search-history {
+  margin-top: 20px;
+}
+
+.search-history h2 {
+  margin-bottom: 10px;
+}
+
+.search-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-history li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+
+h1, h2 {
+  color: #333;
+}

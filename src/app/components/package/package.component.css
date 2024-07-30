@@ -1,0 +1,32 @@
+
+div {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.package-info {
+  margin-top: 20px;
+}
+
+.package-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.package-info li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.package-info p {
+  margin: 5px 0;
+}
+
+
+h2 {
+  color: #333;
+}

@@ -1,0 +1,32 @@
+
+div {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.user-info {
+  margin-top: 20px;
+}
+
+.user-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-info li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+
+h2 {
+  color: #333;
+}
