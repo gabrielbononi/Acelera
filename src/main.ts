@@ -7,6 +7,6 @@ import { FormsModule } from '@angular/forms';
 bootstrapApplication(AppComponent, {
   providers: [
     importProvidersFrom(HttpClientModule, FormsModule),
-    // Adicione aqui qualquer serviço necessário
+    
   ]
 }).catch(err => console.error(err));
