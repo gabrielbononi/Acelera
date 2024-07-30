@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { CepService } from '../../services/cep.service';
 
 @Component({
@@ -9,7 +8,7 @@ import { CepService } from '../../services/cep.service';
   standalone: true,
   templateUrl: './cep-search.component.html',
   styleUrls: ['./cep-search.component.css'],
-  imports: [CommonModule, FormsModule, HttpClientModule]
+  imports: [CommonModule, FormsModule]
 })
 export class CepSearchComponent {
   cep = '';
@@ -20,17 +19,17 @@ export class CepSearchComponent {
   constructor(private cepService: CepService) { }
 
   onSearch() {
-    this.cepService.getCepData(this.cep).subscribe(
-      data => {
+    this.cepService.getCepData(this.cep).subscribe({
+      next: (data) => {
         this.address = data;
         this.errorMessage = null;
         this.updateSearchHistory(this.cep);
       },
-      error => {
+      error: () => {
         this.address = null;
         this.errorMessage = 'CEP não encontrado!';
       }
-    );
+     });
   }
 
   updateSearchHistory(cep: string) {
